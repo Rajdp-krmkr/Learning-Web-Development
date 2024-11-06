@@ -18,9 +18,7 @@ HTML forms are an essential part of any interactive website, allowing users to s
    - [Textarea](#textarea)
    - [File](#file)
    - [Select](#select)
-3. [Label Tag](#label-tag)
-4. [Name and Value Attributes](#name-and-value-attributes)
-5. [Autofocus and Required Attributes](#autofocus-and-required-attributes)
+3. [Name and Value Attributes](#name-and-value-attributes)
 
 ---
 
@@ -108,19 +106,7 @@ Provides a dropdown menu of options.
 
 ---
 
-## 3. Label Tag
-
-The `<label>` tag is used to label form elements, making forms more accessible. It links to a specific input using the `for` attribute.
-
-### Example
-```html
-<label for="username">Username:</label>
-<input type="text" id="username" name="username">
-```
-
----
-
-## 4. Name and Value Attributes
+## 3. Name and Value Attributes
 
 - **`name`**: This attribute identifies the input field when submitting form data, allowing the server to recognize the data by key.
   ```html
@@ -132,22 +118,4 @@ The `<label>` tag is used to label form elements, making forms more accessible. 
   <input type="radio" name="gender" value="male"> Male
   ```
 
----
 
-## 5. Autofocus and Required Attributes
-
-- **`autofocus`**: Automatically focuses on a specific input when the page loads.
-  ```html
-  <input type="text" name="username" autofocus>
-  ```
-
-- **`required`**: Ensures that a field must be filled out before submission.
-  ```html
-  <input type="email" name="email" required>
-  ```
-
----
-
-This guide provides a foundational understanding of HTML form elements, input types, and key attributes, making it easier to create accessible and user-friendly forms.
-
---- 

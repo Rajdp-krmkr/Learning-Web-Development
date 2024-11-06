@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>Popular Input Tags</h1>
+
+      <input type="text" name="name" placeholder="Enter your name" />
+      <!-- this is text input tag 
+       for comment, use: ctrl + "/" -->
+      <br />
+
+      <input type="email" name="email" placeholder="Enter your email" />
+      <br />
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter your password"
+      />
+      <br />
+      <input
+        type="number"
+        name="age"
+        min="1000000000"
+        max="9999999999"
+        placeholder="Enter your age"
+      />
+      <br />
+      <input type="checkbox" name="t&c" value="true" />
+      Accept our terms and conditions
+      <br />
+      <input type="radio" name="Gender" value="male" /> Male
+      <input type="radio" name="Gender" value="female" /> Female
+
+      <br />
+
+      <input type="file" name="ProfilePicture" />
+      <br />
+
+      <textarea
+        name="comment"
+        placeholder="Enter your comment"
+        cols="15"
+        rows="5"
+      ></textarea>
+
+      <br />
+
+      <p>Country</p>
+      <select name="country" id="">
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+      </select>
+
+      <!-- special characters:  & @ " " < $ % ^ * ( ) + = - _ [ ] { } | \ / : ; ' , . < > ? ` ~ -->
+      <!-- http://127.0.0.1:51627/Day%207%20(05-11-2024)/Today's%20class/index.html?name=rajdeep&email=abc%40gmail.com&password=123456&age=60&t%26c=true&Gender=male&ProfilePicture=SHASHANK+FINAL.docx&comment=this+is+beautiful&country=India -->
+
+      <!-- 
+        name            value
+    1)  name            Rajdeep
+    2) email            abc@gmail.com
+    3) t&c              true 
+    4) Gender           male
+    5) ProfilePicture   photo.png
+    6) comment          Hello
+    7) country          Canada
+    -->
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
