@@ -55,6 +55,15 @@ Validates input to ensure it’s in an email format.
 ```html
 <input type="email" name="email" placeholder="Enter your email">
 ```
+### Password
+Takes input of password like sign-in or sign-up cases.
+
+```html
+ <input 
+ type="password"
+ name="password"
+ placeholder="Enter your password">
+```
 
 ### Number
 Accepts numeric input only.
