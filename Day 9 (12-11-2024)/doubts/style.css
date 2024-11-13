@@ -1,0 +1,9 @@
+div{
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+}
+span{
+    font-size: 25px;
+    font-weight: 700;
+}

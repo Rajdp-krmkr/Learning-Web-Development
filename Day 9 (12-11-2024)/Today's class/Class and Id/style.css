@@ -1,0 +1,25 @@
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: green;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+}
+.blue {
+  background-color: blue;
+}
+
+#p1 {
+  color: brown;
+}
+
+#p2 {
+  color: blue;
+}
+
+.green {
+  background-color: green;
+}
