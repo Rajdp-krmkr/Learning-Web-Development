@@ -1,0 +1,14 @@
+div > .green {
+  background-color: green;
+  font-size: 36px;
+}
+div span {
+  background-color: blue;
+}
+
+/* .aqua{
+    background-color: aqua;
+} */
+
+/* div --> parent */
+/* p --> child */

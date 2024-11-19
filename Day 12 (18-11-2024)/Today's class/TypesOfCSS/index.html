@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* internal css */
+
+      /* element selector */
+      p {
+        background-color: red;
+      }
+
+      /* class selector */
+      .green {
+        background-color: green;
+      }
+
+      /* id selector */
+      #text-brown-bold {
+        color: brown;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- this is inline css -->
+    <!-- inline = in + line = in the same line -->
+
+    <h1 style="color: red; text-decoration: underline; font-size: 16px">
+      This is a heading tag
+    </h1>
+
+    <!-- this is internal css -->
+    <p>this is a paragraph tag</p>
+    <p>this is p2</p>
+    <p>this is p3</p>
+    <p>this is p3</p>
+
+    <div class="green">this is div 1</div>
+
+    <div id="text-brown-bold">this is div 2</div>
+
+    <div class="green">this is div 3</div>
+
+    <!-- this is external css -->
+    <span> this is span tag </span>
+
+    <span class="bg-red" id="bg-green"> this is span tag2 </span>
+
+    <span id="bg-green"> this is span tag3 </span>
+
+    <span class="bg-red"> this is span tag4 </span>
+
+    <span> this is span tag5 </span>
+
+    <span> this is span tag6 </span>
+
+    <div>CSS preference: id &gt; class &gt; element tag</div>
+  </body>
+</html>
