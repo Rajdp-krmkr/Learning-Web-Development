@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .red {
+        background-color: red;
+      }
+
+      /* universal selector */
+      * {
+        font-family: monospace;
+      }
+
+      /* pseudo selector */
+      .box:hover {
+        text-decoration: underline;
+      }
+
+      article:hover {
+        color: aqua;
+      }
+
+      /* if link is visited*/
+      a:visited {
+        color: red;
+      }
+
+      /*if link is not visited*/
+      a:link {
+        color: greenyellow;
+      }
+
+      button {
+        background-color: blueviolet;
+      }
+
+      /* when the element is pressed */
+      button:active {
+        background-color: yellow;
+      }
+
+      /* on selecting any text in the website */
+      span::selection {
+        background-color: yellow;
+        color: brown;
+      }
+
+      /* first child of the parent */
+      p:first-child {
+        background-color: green;
+      }
+
+      /* nth child of the parent */
+      p:nth-child(5) {
+        background-color: yellow;
+      }
+
+      /* nth child from the last*/
+      p:nth-last-child(2) {
+        background-color: red;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="red">This is div tag</div>
+    <span> this is span </span>
+    <article>this is article</article>
+    <input type="text" />
+
+    <div class="box">this is box</div>
+    <a href="https://www.instagram2.com">instagram's website</a>
+    <button>Submit</button>
+
+    <footer>
+      <p>this is para 1, first-child</p>
+      <p>this is para 2, second-child</p>
+      <p>this is para 2, third-child</p>
+      <p>this is para 2, fourth-child</p>
+      <p>this is para 2, fifth-child</p>
+    </footer>
+
+    <!-- VS code short cut -->
+    <!-- to copy a line up or down, press alt + shift + up/down arrow -->
+    <!-- to change a line of a code up or down, press alt + up/down arrow -->
+  </body>
+</html>
