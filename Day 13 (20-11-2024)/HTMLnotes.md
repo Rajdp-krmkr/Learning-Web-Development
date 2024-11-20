@@ -190,6 +190,8 @@ div {
 }
 ```
 
+![CSS Box model](https://productiveshop.com/wp-content/uploads/2024/03/Visual-representation-of-margin-and-padding-in-CSS-Box-Model-1024x401.webp)
+
 ---
 
 ## Summary Table:
@@ -224,7 +226,9 @@ div {
   </body>
 </html>
 ```
+
 ---
+
 # CSS Margin Collapse
 
 ## What is Margin Collapse?
@@ -236,16 +240,18 @@ In CSS, **margin collapse** occurs when the top or bottom margins of two block-l
 ## Key Scenarios of Margin Collapse
 
 1. **Adjacent Sibling Elements**  
-  When two block-level elements are next to each other, their top and bottom margins collapse into a single margin, equal to the larger of the two.
+   When two block-level elements are next to each other, their top and bottom margins collapse into a single margin, equal to the larger of the two.
+
 - Example:
   ```html
   <div style="margin-bottom: 20px;">Block 1</div>
   <div style="margin-top: 30px;">Block 2</div>
   ```
-    The resulting margin between the two blocks will be **30px**, not 50px.
+  The resulting margin between the two blocks will be **30px**, not 50px.
 
 2. **Parent and Child Elements**  
    If a block-level element is the first or last child of its parent, and no padding or borders separate the margins, the child's margin may collapse with the parent's margin.
+
    - Example:
      ```html
      <div style="margin-top: 20px;">
@@ -267,3 +273,4 @@ In CSS, **margin collapse** occurs when the top or bottom margins of two block-l
    <div style="padding-top: 10px;">
      <p style="margin-top: 20px;">Paragraph</p>
    </div>
+   ```
