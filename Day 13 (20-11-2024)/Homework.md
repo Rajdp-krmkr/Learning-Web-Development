@@ -64,9 +64,3 @@ Create a simple webpage with the following sections:
 2. Save your HTML file as `index.html` and the external CSS file as `styles.css`.  
 3. Push the folder to your GitHub repository.  
 4. Share the repository link before the next class.  
-
----
-
-### **Bonus Task (Optional):**  
-- Create a button with hover and active effects using pseudo-classes.  
-- Style it with padding and borders to explore the box model further.  
