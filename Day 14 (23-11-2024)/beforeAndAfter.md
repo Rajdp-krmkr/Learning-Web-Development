@@ -1,9 +1,11 @@
 # CSS Pseudo-Elements: `::before` and `::after`
 
-## Introduction  
+## Introduction
+
 The `::before` and `::after` pseudo-elements are used to insert content before or after the content of an HTML element. They allow developers to add decorative or functional content without modifying the HTML structure.
 
-## Syntax  
+## Syntax
+
 ```css
 selector::before {
   content: "Text or value";
@@ -16,16 +18,18 @@ selector::after {
 }
 ```
 
-## Key Features  
-1. Both `::before` and `::after` require the `content` property to function.  
-2. They are used in combination with a selector to target specific elements.  
+## Key Features
+
+1. Both `::before` and `::after` require the `content` property to function.
+2. They are used in combination with a selector to target specific elements.
 3. They are commonly used for visual enhancements, icons, or adding additional information.
 
 ---
 
-# How They Are Used  
+# How They Are Used
 
-## Adding Decorative Content  
+## Adding Decorative Content
+
 ```html
 <p class="quote">Life is beautiful.</p>
 ```
@@ -41,12 +45,15 @@ selector::after {
   font-size: 20px;
 }
 ```
-**Output:**  
+
+**Output:**
+
 ```
 “Life is beautiful.”
 ```
 
-## Styling Buttons  
+## Styling Buttons
+
 ```html
 <button class="cta">Click Me</button>
 ```
@@ -57,12 +64,15 @@ selector::after {
   margin-right: 5px;
 }
 ```
-**Output:**  
+
+**Output:**
+
 ```
 👉 Click Me
 ```
 
-## Adding Icons Dynamically  
+## Adding Icons Dynamically
+
 ```html
 <a href="#" class="link">Home</a>
 ```
@@ -73,31 +83,37 @@ selector::after {
   margin-left: 5px;
 }
 ```
-**Output:**  
+
+**Output:**
+
 ```
 Home 🔗
 ```
 
 ---
 
-## Where They Are Used  
+## Where They Are Used
 
-1. **Decorative Purposes**:  
-   - Add quotation marks, arrows, or icons.  
+1. **Decorative Purposes**:
+
+   - Add quotation marks, arrows, or icons.
    - Create decorative elements without cluttering HTML.
 
-2. **Dynamic Visual Effects**:  
-   - Use animations or transitions for hover states.  
+2. **Dynamic Visual Effects**:
 
-3. **Accessibility Enhancements**:  
-   - Add extra labels or indicators for better user understanding.  
+   - Use animations or transitions for hover states.
 
-4. **Styling List Items or Headers**:  
-   - Create custom bullets or section markers.  
+3. **Accessibility Enhancements**:
+
+   - Add extra labels or indicators for better user understanding.
+
+4. **Styling List Items or Headers**:
+   - Create custom bullets or section markers.
 
 ---
 
-## Example of Styling with Both  
+## Example of Styling with Both
+
 ```html
 <h1 class="header">Welcome</h1>
 ```
