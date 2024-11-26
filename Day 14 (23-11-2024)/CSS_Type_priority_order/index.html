@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
     <style>
-        p {
-            background-color: blue; /* Internal CSS */
-        }
+      p {
+        background-color: blue; /* Internal CSS */
+      }
     </style>
-    <link rel="stylesheet" href="style.css"> <!-- External CSS -->
-</head>
-<body>
-  <p>Inline > Internal > External</p> <!-- Inline CSS -->
-</body>
+  </head>
+  <body>
+    <p>Inline > Internal > External</p>
+    <!-- that is not always true for source order precedence -->
+    <!-- Inline CSS -->
+  </body>
 </html>
