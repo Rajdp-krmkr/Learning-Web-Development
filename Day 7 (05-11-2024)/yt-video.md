@@ -1,4 +1,4 @@
-# Web development Day 3
+# Web development Day 7
 
 Welcome to the Web Development Course!
 

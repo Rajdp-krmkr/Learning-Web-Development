@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        background-color: red;
+        height: 240px;
+        width: 200px;
+      }
+      .child {
+        background-color: rgba(0, 255, 255, 0.675);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 20px;
+        left: 200px;
+      }
+
+      .parent_div {
+        margin: 20px;
+        /* border-width: 20px;
+        border-style: solid;
+        border-color: blue; */
+        border: 20px solid #00ffffc3;
+        background-color: hsl(16, 100%, 60%);
+        height: 200px;
+        width: 200px;
+        padding: 20px;
+      }
+
+      .hsla {
+        background-color: hsla(138, 100%, 60%, 0.5);
+        height: 100px;
+        width: 100px;
+        padding: 20px;
+        position: absolute;
+        top: 400px;
+        left: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <h1 class="child"></h1>
+    </div>
+
+    <div class="parent_div">
+      <div class="hsla"></div>
+    </div>
+  </body>
+</html>

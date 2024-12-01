@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+      }
+      /* order of appearance is maintained as all the class selectors have same specificity*/
+      .container {
+        background-color: red;
+      }
+
+      .container3 {
+        background-color: green;
+      }
+
+      .container2 {
+        background-color: blue;
+      }
+
+      /* specificity order: id selector > class selector > element selector */
+      * {
+        color: aqua;
+      }
+      h1 {
+        color: red;
+      }
+      #main_heading {
+        color: green;
+      }
+      .heading {
+        color: blue;
+      }
+      .head {
+        color: purple;
+      }
+      /*[data-x="a"] {
+        background-color: aqua;
+      }*/
+
+      span.child_span#span_id {
+        /* element selector = 1
+        class selector = 10
+        id selector = 100 
+        sum = 111
+        specificity order: 111
+        */
+        color: red;
+      }
+      #span_id {
+        /* id selector = 100
+        
+        specificity order: 100*/
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="child_span" id="span_id">hi</span>
+    <div class="container container2 container3"></div>
+    <h1 class="heading" id="main_heading" data-x="a" style="color: maroon">
+      heading
+    </h1>
+    <h1 class="heading" id="main_heading" data-x="b" style="color: maroon">
+      heading2
+    </h1>
+
+    <h2>Specificity order</h2>
+    <p>
+      Style attrbute > ID selector > class or attribute selector > element
+      selector > universal selector (*)
+    </p>
+    <!-- 100 + 10 + 10 = 120 -->
+    <!-- 10 + 1 = 11 -->
+  </body>
+</html>
