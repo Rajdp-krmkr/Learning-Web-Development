@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .parent {
+        width: 300px;
+        height: 200px;
+        background-color: aqua;
+        font-size: 30px;
+      }
+      .child {
+        width: 50%; /* 150px */
+        height: 30%; /* 200 * 0.3 = 60px*/
+        border: 2px solid red;
+        background-color: brown;
+        font-size: 50%; /* 15px */
+      }
+      /*.para {
+        font-size: 20px;
+      }*/
+      .viewport_height_and_width {
+        background-color: red;
+        width: 30vw; /*  30% of the entire viewport width*/
+        height: 60vh; /*  60% of the entire viewport width*/
+      }
+      .viewport_max_and_min {
+        height: 60vmax; /* 100% of the viewport width or height, whichever is smaller */
+        /*1920 * 0.6 = */
+        width: 20vmin;
+        background-color: blueviolet;
+      }
+
+      .parent_em {
+        font-size: 20px;
+      }
+      .child_em {
+        font-size: 2em; /*1.5 times of the font-size of parent */
+      }
+
+      html{
+        font-size: 40px;
+      }
+      .rem{  /*"r" in "rem" represents root means <html> tag*/
+        font-size: 2rem; /*80px*/
+      }
+      .ch{
+        width: 10ch; /* 10 * width of 0 */
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units -->
+    <!-- <div class="parent">
+      <p class="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
+        exercitationem perferendis maiores?
+      </p>
+
+      this is random text
+      <div class="child">this is childs text</div>
+
+    </div> -->
+    <!-- <div class="viewport_height_and_width"></div> -->
+    <!-- <div class="viewport_max_and_min">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque dicta ad ducimus quasi, quae voluptatibus asperiores, rerum molestias sequi quia corporis reiciendis voluptatem porro, repudiandae eos inventore. Perferendis vel ab consequuntur quos quia odit optio tenetur consectetur ea debitis in odio inventore voluptate, illum consequatur!
+    </div> -->
+    <div class="parent_em">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+      <div class="child_em">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam
+        alias accusamus?
+      </div>
+    </div>
+    <div class="rem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quo quos ratione.
+    </div>
+    <!-- <input type="text" class="ch" placeholder="Input"> -->
+  </body>
+</html>
