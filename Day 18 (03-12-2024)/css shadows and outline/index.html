@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box-shadow {
+        box-shadow: 5px 5px 10px 11px gray;
+        text-shadow: 2px 2px 4px rgb(121, 221, 27);
+        border: 7px solid black;
+        height: 40px;
+      }
+      .outline{
+        height: 40px;
+        background-color: aqua;
+        outline: 7px solid red;
+        /* applies outside of the element, but border applies inside of the element*/
+        border: 2px solid blue;
+        outline-offset: 24px;
+        border-radius: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-shadow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id placeat
+      ducimus minus?
+    </div>
+    <div class="outline">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id placeat
+        ducimus minus?
+    </div>
+  </body>
+</html>

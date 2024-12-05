@@ -1,0 +1,6 @@
+### **Classwork (Outside the Markdown Note)**  
+**Task:**  
+Create a webpage with:  
+1. A parent `<div>` with a `relative` position and a `perspective` of `500px`.  
+2. A child `<div>` with an `absolute` position inside the parent, and a `transform` applied to the parent.  
+3. Demonstrate how the child’s position changes when the parent's properties are altered.  

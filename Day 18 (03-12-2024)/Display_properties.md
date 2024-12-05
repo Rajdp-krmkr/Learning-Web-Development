@@ -46,16 +46,6 @@ The `display` property determines how elements are rendered in the layout.
   }
   ```
 
-#### **5. `list-item`**
-
-- Displays the element as a list item with a marker (e.g., a bullet).
-- **Example:**
-  ```css
-  li {
-    display: list-item;
-  }
-  ```
-
 ---
 
 ### **Comparison of Display Values**
@@ -66,7 +56,6 @@ The `display` property determines how elements are rendered in the layout.
 | `inline`          | Flows with the text, occupies only required width. | Styling spans, text emphasis.         |
 | `inline-block`    | Inline layout with block features.                 | Buttons, styled inline elements.      |
 | `none`            | Hides the element.                                 | Conditional rendering.                |
-| `list-item`       | Displays as a list item.                           | Lists (`<ul>`, `<ol>`).               |
 
 ---
 
