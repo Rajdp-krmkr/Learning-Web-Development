@@ -43,7 +43,7 @@ Design a visually appealing form for a startup using various HTML and CSS proper
      - Use an external CSS file for most of the form’s styling.
 
 4. **HTML Structure**
-   - Use semantic tags like `<form>`, `<fieldset>`, `<legend>`, `<label>`, and `<input>`.
+   - Use semantic tags like `<form>`, `<label>`, and `<input>`.
    - Ensure proper accessibility with `for` attributes in labels and placeholder text.
 
 ### **Submission Instructions:**

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        :root{
+            /* globally scoped variables */
+            --primary-theme-clr: rgb(158, 238, 84);
+            --primary-font-size: 25px;
+            /*--border-radius: 50%;*/ /*this border radius is used to make a circle*/
+            --border-radius: 10px;
+        }
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+      }
+      .box1 {
+        background-color: var(--primary-theme-clr);
+        font-size: var(--primary-font-size);
+        border-radius: var(--border-radius);
+      }
+      .box2 {
+        background-color: var(--primary-theme-clr, red);
+        font-size: var(--primary-font-size);
+        border-radius: var(--border-radius);
+      }
+      .box3 {
+        --primary: rgb(0, 21, 255); /*locally scoped variables*/
+        /*overrides the color of --parimary-theme-clr */
+        background-color: var(--primary-theme-clr);
+        font-size: var(--primary-font-size);
+        border-radius: var(--border-radius);
+      }
+      .btn{
+        background-color: var(--primary-theme-clr);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">this is box1</div>
+    <div class="box box2">this is box2</div>
+    <div class="box box3">this is box3</div>
+    <button class="btn">Submit</button>
+  </body>
+</html>
