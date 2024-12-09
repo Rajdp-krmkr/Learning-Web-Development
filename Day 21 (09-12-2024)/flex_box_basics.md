@@ -66,7 +66,7 @@ The `justify-content` property aligns flex items along the main axis (as defined
 ```css
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 ```
 
