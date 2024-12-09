@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grandParent {
+        background-color: aqua;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .parent {
+        background-color: white;
+        box-shadow: 7px 11px 15px 0px #80808080;
+        border-radius: 10px;
+        width: 500px;
+        height: 100px;
+        display: flex;
+      }
+      .img {
+        height: 100%;
+        width: 27%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .text-1 {
+        font-weight: 700;
+      }
+      .text-2 {
+        font-size: 12px;
+       
+      }
+      .text-3 {
+        font-size: 13px; 
+        color: rgb(0, 145, 255);
+      }
+      .text-4 {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .flex {
+        display: flex;
+      }
+      .justify-content-start{
+        justify-content: start;
+      }
+      .justify-content-end{
+        justify-content: end;
+      }
+
+      /*.sub-parent{
+        width: 100%;
+      }*/
+      .sub-parent{
+        flex: 1;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="grandParent">
+      <div class="parent">
+        <img
+          src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+          class="img"
+          alt=""
+        />
+        <div class="sub-parent">
+          <div class="flex justify-content-start"><span class="text-1">Madrid</span></div>
+          <div class="flex justify-content-start">
+            <span class="text-2">Mon, 23 nov - Tue, 1 Dec</span>
+          </div>
+          <div class="flex justify-content-start"><span class="text-3">1 stop * 16 h 58 m</span></div>
+          <div class="flex justify-content-end"><span class="text-4">1284$</span></div>
+        </div>
+      </div>
+      <div class="parent">
+        <img
+          src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+          class="img"
+          alt=""
+        />
+        <div class="sub-parent">
+          <div class="flex justify-content-start"><span class="text-1">Madrid</span></div>
+          <div class="flex justify-content-start">
+            <span class="text-2">Mon, 23 nov - Tue, 1 Dec</span>
+          </div>
+          <div class="flex justify-content-start"><span class="text-3">1 stop * 16 h 58 m</span></div>
+          <div class="flex justify-content-end"><span class="text-4">1284$</span></div>
+        </div>
+      </div>
+      <div class="parent">
+        <img
+          src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+          class="img"
+          alt=""
+        />
+        <div class="sub-parent">
+          <div class="flex justify-content-start"><span class="text-1">Madrid</span></div>
+          <div class="flex justify-content-start">
+            <span class="text-2">Mon, 23 nov - Tue, 1 Dec</span>
+          </div>
+          <div class="flex justify-content-start"><span class="text-3">1 stop * 16 h 58 m</span></div>
+          <div class="flex justify-content-end"><span class="text-4">1284$</span></div>
+        </div>
+      </div>
+      <div class="parent">
+        <img
+          src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+          class="img"
+          alt=""
+        />
+        <div class="sub-parent">
+          <div class="flex justify-content-start"><span class="text-1">Madrid</span></div>
+          <div class="flex justify-content-start">
+            <span class="text-2">Mon, 23 nov - Tue, 1 Dec</span>
+          </div>
+          <div class="flex justify-content-start"><span class="text-3">1 stop * 16 h 58 m</span></div>
+          <div class="flex justify-content-end"><span class="text-4">1284$</span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
