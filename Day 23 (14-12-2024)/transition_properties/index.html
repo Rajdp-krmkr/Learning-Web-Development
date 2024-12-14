@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS transition</title>
+    <style>
+      .container {
+        width: 50vw;
+        height: 30vh;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+      .box {
+        width: 10vw;
+        height: 10vh;
+        background-color: brown;
+        /*transition-property: all;
+        transition-duration: 3s;
+        transition-delay: 1s;
+        transition-timing-function: cubic-bezier(0, 0.74, 0.84, 1.06);*/
+        /*transition shorthand property*/
+        transition: all 3s cubic-bezier(0, 0.74, 0.84, 1.06) 1s;
+      }
+      .box:hover{
+        transform: scale(1.5);
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="box translate">web-dev</div>
+    </div>
+  </body>
+</html>
