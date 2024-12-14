@@ -1,0 +1,52 @@
+.container {
+  width: 600px;
+  height: 800px;
+  border: 2px solid black;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+}
+
+.child {
+  background-color: burlywood;
+  width: 100px;
+  height: 50px;
+  border: 2px solid black;
+  margin: 2px;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    background-color: red;
+  }
+}
+@media screen and (max-width: 435px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+ .parent{
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+}
+/*
+@media screen and (orientation: landscape) {
+  .parent {
+    background-color: red;
+  }
+} */
+/* @media screen and (aspect-ratio: 16/9) {
+  .parent {
+    background-color: blue;
+  }
+} */
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  .parent {
+    background-color: red;
+  }
+}
+
