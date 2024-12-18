@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+}
+img {
+  border: 15px solid white;
+  border-radius: 40px;
+  box-shadow: -1px 2px 5px 2px rgb(0 0 0 / 43%);
+}
+.parent {
+  position: relative;
+  margin-top: 100px;
+}
+.parent > div {
+  position: absolute;
+  
+}
+.img1 {
+  left: 200px;
+  transform: rotate(-5deg);
+
+}
+.img2 {
+  left: 300px;
+  transform: rotate(10deg);
+
+}
+.img3 {
+  left: 400px;
+  transform: rotate(-4deg);
+
+}
+.img4 {
+  left: 500px;
+  transform: rotate(10deg);
+
+}
