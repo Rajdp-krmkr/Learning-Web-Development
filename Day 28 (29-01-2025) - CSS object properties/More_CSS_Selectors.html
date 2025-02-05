@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1::first-line {
+        color: red;
+        font-weight: 700;
+        font-size: 25px;
+      }
+
+      p::first-letter {
+        color: greenyellow;
+        font-size: 30px;
+      }
+
+      /*.div3 p:first-child {
+        color: rgb(253, 4, 228);
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }*/
+
+      .div3 p:nth-child(even) {
+        color: rgb(4, 253, 249);
+      }
+      .div3 p:nth-child(odd) {
+        color: rgb(253, 4, 4);
+      }
+      .div3 p:nth-child(1) {
+        color: rgb(30, 136, 21);
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      /*.div4 p:nth-last-child(2) {
+        background-color: salmon;
+      }*/
+      .div4 p:nth-last-child(odd) {
+        background-color: salmon;
+      }
+      .div4 p:nth-last-child(even) {
+        background-color: rgb(21, 120, 51);
+      }
+
+      * {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .second_div * {
+        color: rgb(19, 191, 91);
+      }
+
+      [type="text"] {
+        border: 2px solid blue;
+      }
+
+      /*[data-color^="neon"] {
+        background-color: rgb(20, 253, 241);
+      }
+      [href$=".com"]{
+        color: red;
+      }*/
+      [href*="facebook"] {
+        color: rgb(58, 255, 40);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="div1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vero illo
+      delectus velit nam assumenda, atque maxime fugit veritatis ipsa cumque
+      quasi non magni voluptas ab tempore facilis accusamus suscipit qui minima.
+      Minima ut aspernatur ducimus quidem. Magnam incidunt libero dolor
+      similique perspiciatis fugit voluptates laudantium eos deserunt nihil ab
+      ea nam impedit voluptas nulla autem sequi ipsam iste vero necessitatibus,
+      laboriosam, eius eveniet. Autem exercitationem qui eveniet iure, alias
+      perferendis dolor temporibus laborum nulla recusandae quis, praesentium at
+      ea consequatur adipisci officiis culpa libero distinctio! Aliquam, dicta
+      nostrum ex ab quisquam dolor nesciunt doloribus perspiciatis dolorum.
+      Ullam quas accusantium molestias quo vero officia qui praesentium quis
+      rerum nemo. Fugiat accusamus explicabo mollitia eaque asperiores
+      consectetur fuga, eos voluptates accusantium nemo, error repellat quos at
+      commodi rerum iure magni voluptatum? Consequatur praesentium illo ex
+      exercitationem aut itaque laudantium fuga, illum molestiae repellendus?
+      Inventore delectus tenetur, similique hic dolorum magnam deserunt
+      reprehenderit itaque laudantium distinctio sint quia iste aliquam
+      voluptatibus earum non voluptate veritatis? Accusantium ipsam fuga rem
+      quam ea porro distinctio expedita dolor voluptate repellendus repudiandae
+      suscipit consequatur ad quidem, doloremque dolorum pariatur praesentium
+      eligendi itaque ipsa iure adipisci. Illo maiores totam nostrum repudiandae
+      dolor. Ipsa quae alias cupiditate non fuga facere ad eveniet inventore
+      impedit accusantium. Eligendi, ex reprehenderit. Voluptates voluptas fuga,
+      est possimus ea delectus dolorem magnam animi distinctio non impedit
+      quibusdam fugiat asperiores architecto quisquam, ratione iste
+      reprehenderit in! Totam distinctio dolore praesentium, dicta repellendus
+      explicabo vero eius voluptatibus pariatur modi odit autem necessitatibus
+      ad magni quo ducimus quidem tempore laboriosam, repellat excepturi
+      ratione. Voluptas, alias neque? Praesentium est dolorum quam laudantium
+      voluptas repellendus, non repellat deleniti quo, sit animi nulla illum
+      rerum asperiores perspiciatis ex. Eveniet excepturi alias dolorem
+      exercitationem quidem optio veritatis mollitia, qui laudantium modi
+      suscipit quibusdam doloremque laborum laboriosam fugiat voluptates
+      debitis. Nostrum accusantium, iste itaque eos praesentium quae architecto
+      ab, suscipit hic expedita deleniti eveniet, maiores aliquam. Voluptatum,
+      labore quasi! Cumque doloremque voluptas, sapiente saepe at, fugit
+      aperiam, libero rerum cupiditate vel ducimus maxime eum rem et. Delectus
+      optio, reprehenderit, minus velit ducimus corrupti dolores ea quasi culpa
+      alias maxime illum veritatis nam deleniti cumque sed quae rem, doloribus
+      atque. Odit distinctio, quod at quaerat quis magnam, quam ex
+      necessitatibus temporibus aliquam perspiciatis alias aut autem laborum
+      placeat eius. Voluptas iure animi consequuntur atque doloremque! Neque,
+      similique perspiciatis asperiores sequi earum quas placeat rerum, ipsa
+      libero, vitae voluptatem! Dignissimos similique asperiores odit dolorem
+      deserunt eligendi aliquam amet ea earum hic eius, quos itaque quae fugiat
+      nostrum, harum reprehenderit. Aut, tempora deserunt culpa ipsum aperiam
+      repellendus autem. Quasi dolorem, expedita nam quaerat esse incidunt
+      suscipit! Rem quo nesciunt ratione voluptatum vitae sint fugiat itaque,
+      rerum dolorem facere eum.
+    </div> -->
+    <!-- <div class="div2">
+      <p>THis is paragraph one</p>
+      <p>Also this is paragraph 2</p>
+      <p>Paragraph 3</p>
+      <p>paragraph 4</p>
+    </div> -->
+
+    <!-- <div class="div3">
+      <p>Also this is paragraph 2</p>
+      <p>Paragraph 3</p>
+      <p>THis is paragraph one</p>
+      <p>paragraph 4</p>
+      <p>Paragraph 3</p>
+      <p>THis is paragraph one</p>
+      <p>paragraph 4</p>
+      <p>Paragraph 3</p>
+      <p>THis is paragraph one</p>
+      <p>paragraph 4</p>
+    </div> -->
+    <!-- <div class="div4">
+      <p>Also this is paragraph 2</p>
+      <p>Paragraph 3</p>
+      <p>THis is paragraph one</p>
+      <p>paragraph 4</p>
+      <p>Paragraph 3</p>
+      <p>THis is paragraph one</p>
+      <p>paragraph 4</p>
+      <p>Paragraph 3</p>
+      <p>THis is paragraph one</p>
+      <p>paragraph 4</p>
+    </div> -->
+
+    <div class="first_div">dff</div>
+    <div class="second_div">
+      <p>ds</p>
+      <p>434</p>
+      <p>76</p>
+      <p>thr</p>
+      <p>easd</p>
+      <span> sdfsdgsg </span>
+      <article>wsuijiouhdf</article>
+    </div>
+
+
+    <!-- attribute selectors -->
+    <input type="text" />
+    <input type="radio" />
+    <input type="email" />
+
+    <div type="text">this is a div</div>
+    <div data-color="neon_blue">this is a div</div>
+    <div data-color="neon_yellow">this is a div</div>
+
+    <a href="www.google.com">This is google link</a>
+    <a href="www.facebook.com">this is facebook link</a>
+    <a href="www.facebook.in">this is facebook link</a>
+
+  </body>
+</html>
