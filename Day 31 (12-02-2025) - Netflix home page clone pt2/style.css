@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: relative;
+}
+.background_image {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/638e9299-0637-42d1-ba39-54ade4cf2bf6/web/IN-en-20250203-TRIFECTA-perspective_46eb8857-face-4ea6-b901-dbf22b461369_large.jpg");
+  height: 93vh;
+  width: 100vw;
+  box-shadow: inset -20px 18px 20px 15px rgba(0, 0, 0, 0.374);
+  position: absolute;
+  filter: brightness(0.5);
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.logo {
+  width: 140px;
+
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 150px;
+}
+option{
+    background-color: black;
+}
+.language_selection {
+  height: 28px;
+  background-color: rgba(0, 0, 0, 0.559);
+  color: white;
+  padding: 0px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(126, 126, 126);
+
+}
+.lang_select_tag {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  outline: none;
+}
+
+.language_icon {
+  width: 20;
+  filter: invert();
+}
+.sign-in {
+  font-size: 15px;
+  height: 28px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e50914;
+  color: white;
+}
+.language_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
