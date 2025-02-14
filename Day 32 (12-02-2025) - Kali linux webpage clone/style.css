@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: url("https://www.kali.org/images/home-banner.jpg");
+  height: 100vh;
+}
+.blue_shade {
+  height: 100%;
+  width: 100%;
+  background-color: #10377aa0;
+}
+.logo {
+  filter: brightness(0) invert();
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 70px;
+  align-items: center;
+}
+
+.documentation_word {
+  position: relative;
+}
+
+.documentation_list {
+  /* display: none; */
+  background: aqua;
+  position: absolute;
+  width: max-content;
+  background-color: black;
+  padding: 20px 15px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+.documentation_list ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.bg-black:hover {
+  background: #000;
+}
+.bg-black {
+  margin: 10px;
+}
+
+.documentation_word {
+  /* padding: 10px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: transparent;
+  transition: background-color 200ms;
+}
+
+.documentation_word:hover {
+  background: #000;
+}
+
+.documentation_word:hover .documentation_list {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.list_items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  gap: 20px;
+}
+
+.list_items a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+.about .documentation_list {
+  right: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0;
+}
