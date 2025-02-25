@@ -26,22 +26,19 @@
 11. Create two variables `num1` and `num2`, assign them numbers, and perform addition, subtraction, multiplication, and division.
 12. Write a program to check if `10` is equal to "10" using `==` and `===`. Print the results.
 13. Create a program that calculates the remainder when `15` is divided by `4`.
-14. Use the increment (`++`) and decrement (`--`) operators on a variable `count`.
-15. Declare two variables `x = 10` and `y = 5`. Swap their values without using a third variable.
+14. Declare two variables `x = 10` and `y = 5`. Swap (change their value with each other's) their values without using a third variable.
 
 ### **Exercise 5: Combining Strings & Numbers**
-16. Declare two variables `firstName` and `lastName`. Concatenate them to form a full name.
-17. Create a variable `price` and `quantity`, multiply them, and print the total cost.
-18. Convert a number to a string using `String()` and print its type using `typeof`.
+15. Create a variable `price` and `quantity`, multiply them, and print the total cost.
 
 ### **Bonus Challenge Questions**
-19. Write a program that calculates the area of a rectangle with `width` and `height` variables.
-20. Use a template literal to print "My name is [Your Name] and I am [Your Age] years old."
+16. Write a program that calculates the area of a rectangle with `width` and `height` variables.
 
 ---
 
 ### **Submission Instructions:**
 - Try solving the exercises in your browser console or an external JavaScript file.
+- copy and paste each questions into your code file and comment them.
 - Save your solutions and bring them to the next class for discussion!
 
 Happy Coding! 🚀
