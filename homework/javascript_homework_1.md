@@ -32,7 +32,8 @@
 15. Create a variable `price` and `quantity`, multiply them, and print the total cost.
 
 ### **Bonus Challenge Questions**
-16. Write a program that calculates the area of a rectangle with `width` and `height` variables.
+16. Write a program that calculates the area of a rectangle with `width` and `height` variables. (DONE)
+17. Write a program that calculates the area of a circle with `radius` variable using user input from browser.
 
 ---
 
