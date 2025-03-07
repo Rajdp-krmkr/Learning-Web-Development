@@ -82,6 +82,20 @@ const heading = document.querySelector("h1"); // Selects first h1
 const allParagraphs = document.querySelectorAll("p"); // Selects all p elements
 console.log(allParagraphs);
 ```
+```js
+const allItems = document.querySelectorAll(".item"); // Selects all elements with class "item"
+allItems.forEach(item => {
+    item.style.fontWeight = "bold";
+});
+```
+```js
+const title = document.querySelector("#title"); // Selects the element with ID "title"
+title.innerText = "Updated Title";
+```
+```js
+const buttonInsideDiv = document.querySelector("div .btn"); // Selects a button inside a div
+buttonInsideDiv.style.backgroundColor = "green";
+```
 
 ---
 
