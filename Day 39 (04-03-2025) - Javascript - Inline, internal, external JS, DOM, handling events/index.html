@@ -4,7 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script>
+      function sayHEllo() {
+        alert("Hello!");
+        console.log("Hello");
+      }
+    </script>
   </head>
-  <body id="body"></body>
-  <script src="script.js"></script>
+  <body id="body">
+    <button onclick="alert('Hello world')">Click me</button>
+    <button onclick="sayHEllo()">Click button</button>
+    <div id="id_Name">This is a div tag</div>
+    <div>
+      <button class="btn">This is button 1</button>
+      <button class="btn">This is button 2</button>
+      <button class="btn">This is button 3</button>
+      <button class="btn">This is button 4</button>
+      <button class="btn">This is button 5</button>
+    </div>
+  </body>
+  <script src="script.js" defer></script>
 </html>
