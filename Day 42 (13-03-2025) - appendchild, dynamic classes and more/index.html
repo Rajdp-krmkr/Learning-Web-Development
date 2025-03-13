@@ -4,6 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .btn {
+        padding: 10px;
+        background: #dddddd;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+
+      /*event bubbling*/
+      #grandParent {
+        height: 500px;
+        width: 500px;
+        background: rgb(255, 201, 22);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #parent {
+        height: 200px;
+        width: 300px;
+        background: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #child {
+        padding: 10px;
+        background: #dddddd;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div id="box" class="class1 class2 hidden"></div>
+    <!-- <section>
+      <button class="btn">Button 1</button>
+      <button class="btn">Button 2</button>
+      <button class="btn">Button 3</button>
+      <button class="btn">Button 4</button>
+      <button class="btn">Button 5</button>
+    </section> -->
+    <section>
+      <!-- event bubbling -->
+      <div id="grandParent">
+        this is grand parent
+        <div id="parent">
+          this is parent
+          <button id="child">this is child</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
 </html>
