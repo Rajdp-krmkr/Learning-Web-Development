@@ -1,25 +1,49 @@
-const btn = document.getElementById("submitBTN");
+// Print numbers from 1 to 20 using a for loop.
 
-function serverFunction(username, email) {
-  // storing username in database
-}
+// for (let i = -1; i <= 25; i++) {
+//   console.log(i);  //for loop is used where we know the number of execution
+// }
 
-btn.addEventListener("click", function () {
-  let username = document.getElementById("username");
-  let usernameValue = username.value;
+// let i = 0;
 
-  let email = document.getElementById("email");
-  let emailValue = email.value;
+// while (i <= 5) {
+//   console.log(i); //for loop is used where we don't know the number of execution
+//   i++;
+// }
 
-  console.log(
-    "username value: " + usernameValue + ", email value: " + emailValue
-  );
+// let j = 0;
 
-  serverFunction(usernameValue, emailValue);
+// do {
+//   console.log(j);
+//   j++
+// } while (j < 5);
+
+const numbers = [10, 20, 30, 40]; //251 employees
+
+numbers.forEach((item) => {
+  console.log(item);
 });
 
+for (let i = 0; i < numbers.length(); i++) {
+  console.log(numbers[i]);
+}
 
+// numbers.forEach(function (item) {
+//   console.log(item);
+//   console.log(item + 10);
+// });
+let fruits = ["Apple", "Banana", "Cherry"];
+for (let fruit of fruits) {
+  console.log(fruit);
+}
 
-document.getElementById("username").addEventListener("input", function(event) {
-    document.getElementById("displayName").innerText = event.target.value;
-})
+for (let number in numbers) {
+  console.log(number);
+}
+
+//Print only even numbers from 1 to 20 using a loop.
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
+}
