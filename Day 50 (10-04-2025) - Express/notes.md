@@ -1,6 +1,3 @@
-Absolutely! Here's a more **step-by-step**, **elaborate**, and **beginner-friendly** version of the **Express.js Day 1 Notes**—designed to help learners clearly understand each concept and implementation:
-
----
 
 # 🚀 Express.js — Day 1 Notes  
 *Introduction to Backend with Node.js and Express*
@@ -182,7 +179,3 @@ In the next class, we will:
 - Work with **route parameters** and **query strings**
 - Serve static files like HTML, CSS, images
 - Learn about `POST` requests and request body parsing
-
----
-
-Let me know if you'd like an assignment or mini project to go with this class!
