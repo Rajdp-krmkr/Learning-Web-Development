@@ -1,0 +1,15 @@
+{
+  "name": "express_first_app",
+  "version": "2.0.4",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "rajdeep karmakar",
+  "license": "ISC",
+  "description": "this is a express app",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
