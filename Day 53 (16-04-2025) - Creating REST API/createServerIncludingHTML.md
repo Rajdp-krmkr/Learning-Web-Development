@@ -1,27 +1,29 @@
 ### 1. **HTML Form (`index.html`)**
+
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Form Example</title>
-</head>
-<body>
-  <form action="/submit" method="POST">
-    <label>Name: <input type="text" name="name" required /></label><br />
-    <label>Email: <input type="email" name="email" required /></label><br />
-    <button type="submit">Submit</button>
-  </form>
-</body>
+  <head>
+    <title>Form Example</title>
+  </head>
+  <body>
+    <form action="/submit" method="POST">
+      <label>Name: <input type="text" name="name" required /></label><br />
+      <label>Email: <input type="email" name="email" required /></label><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
 ```
 
 ---
 
 ### 2. **Express Server (`server.js`)**
+
 ```javascript
-const express = require('express');
-const bodyParser = require('body-parser');
-const fs = require('fs'); // optional: for saving to a file
+const express = require("express");
+const bodyParser = require("body-parser");
+const fs = require("fs"); // optional: for saving to a file
 
 const app = express();
 const PORT = 3000;
@@ -30,19 +32,19 @@ const PORT = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve the HTML form
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
 });
 
 // Handle form submission
-app.post('/submit', (req, res) => {
+app.post("/submit", (req, res) => {
   const { name, email } = req.body;
 
   // Example: save to a simple file or use a database
   const data = `Name: ${name}, Email: ${email}\n`;
-  fs.appendFileSync('submissions.txt', data);
+  fs.appendFileSync("submissions.txt", data);
 
-  res.send('Form submitted successfully!');
+  res.send("Form submitted successfully!");
 });
 
 app.listen(PORT, () => {
@@ -53,6 +55,7 @@ app.listen(PORT, () => {
 ---
 
 ### 3. **Install Required Packages**
+
 Make sure to install the necessary packages:
 
 ```bash
@@ -63,6 +66,7 @@ npm install express body-parser
 ---
 
 ### 4. **Run the Server**
+
 ```bash
 node server.js
 ```
