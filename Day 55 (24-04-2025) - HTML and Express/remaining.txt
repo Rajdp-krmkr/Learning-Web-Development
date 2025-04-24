@@ -1,0 +1,4 @@
+data fetching
+await / async function
+database (mongodb);
+server hosting
