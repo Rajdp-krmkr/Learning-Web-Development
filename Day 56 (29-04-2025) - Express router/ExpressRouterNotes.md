@@ -1,7 +1,3 @@
-Absolutely! Here’s a **detailed but beginner-friendly note** on **Express Router** that you can keep for revision or documentation:
-
----
-
 ## 📘 Express Router – Complete Beginner Notes
 
 ### ✅ What is Express Router?
