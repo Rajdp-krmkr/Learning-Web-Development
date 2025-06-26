@@ -18,4 +18,9 @@ router.get("/profile", (req, res) => {
   res.send("User profile data received!");
 });
 
+router.post("/profile", (req, res) => {
+  const { email, name } = req.body;
+  res.send(`User profile data posted! ${email} & ${name}`);
+});
+
 module.exports = router;

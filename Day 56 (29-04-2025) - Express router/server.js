@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const router = require("./user");
+const BooksRouter = require("./Books");
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
@@ -8,7 +9,7 @@ app.get("/", (req, res) => {
 
 app.use("/user", router);
 
-app.use("/other", router);
+app.use("/books", BooksRouter);
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
