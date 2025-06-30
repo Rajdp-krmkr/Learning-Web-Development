@@ -1,7 +1,3 @@
-Here's a **real-life, detailed problem statement** that requires creating an Express.js server/REST API. It’s practical and relatable, especially for beginners or intermediate learners:
-
----
-
 ## 🧩 Real-Life Problem: **"Create a Job Application Backend API"**
 
 ### 🔍 Problem Statement:
