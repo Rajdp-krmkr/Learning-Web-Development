@@ -29,9 +29,9 @@ mongoose
     console.log("Error: ", err);
   });
 
-
-
 //CRUD (create, read, update, delete) operation
+const taskRouter = require("./routes/taskRoutes");
+app.use("/api/tasks", taskRouter);
 
 //run the server
 app.listen(3000, () => {
