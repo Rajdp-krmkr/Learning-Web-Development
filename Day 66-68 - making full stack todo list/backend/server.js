@@ -3,6 +3,9 @@
 // put (task edit, task completion)
 // delete (deleting task )
 
+// rajdeep
+// to9gAE7uAMflZot3
+
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -17,7 +20,8 @@ app.use(
 app.use(express.json());
 
 //Mongoose data store
-const uri = ""; // change the uri with mongodb uri
+const uri =
+  "mongodb+srv://rajdeep:to9gAE7uAMflZot3@cluster0.5eajbhh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"; // change the uri with mongodb uri
 
 //connect mongoose
 mongoose
@@ -31,6 +35,7 @@ mongoose
 
 //CRUD (create, read, update, delete) operation
 const taskRouter = require("./routes/taskRoutes");
+
 app.use("/api/tasks", taskRouter);
 
 //run the server
