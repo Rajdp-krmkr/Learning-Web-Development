@@ -23,15 +23,30 @@ ul {
   list-style-type: none;
 }
 
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  background-color: rgb(212, 212, 212);
+}
+
 li {
   list-style: none;
   margin-bottom: 10px;
   padding: 8px;
   background-color: rgb(216, 241, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.completed {
-  text-decoration: line-through;
-  color: gray;
-  background-color: rgb(212, 212, 212);
+input[type="checkbox"] {
+  accent-color: rgb(2, 137, 43);
+}
+
+.delete_btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
