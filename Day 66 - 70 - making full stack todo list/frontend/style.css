@@ -36,7 +36,6 @@ li {
   background-color: rgb(216, 241, 255);
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 input[type="checkbox"] {
@@ -47,6 +46,24 @@ input[type="checkbox"] {
   background-color: red;
   color: white;
   border: none;
-  padding: 5px 10px;
+  height: 30px;
   cursor: pointer;
+}
+.taskText {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.left_div {
+  display: flex;
+  align-items: start;
+  width: 100%;
+}
+.taskTitle {
+  font-weight: 600;
+}
+.tasDesc {
+  color: gray;
 }
