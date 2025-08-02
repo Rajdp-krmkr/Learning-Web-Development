@@ -34,17 +34,15 @@ router.post("/", async (req, res) => {
 //on completing task
 router.put("/:id", async (req, res) => {
   const { id } = req.params;
-  const { title, description } = req.body;
-  if (!title) {
-    return res
-      .status(400)
-      .json({ message: "Title is not found, please give a title" });
-  }
+  const { isCompleted } = req.body;
+  // if (!isCompleted) {
+  //   return res.status(400).json({ message: "Updated value not found" });
+  // }
 
   try {
     const updatedTask = await Task.findByIdAndUpdate(
       id,
-      { title, description, isCompleted: true },
+      { isCompleted: isCompleted },
       { new: true }
     );
 

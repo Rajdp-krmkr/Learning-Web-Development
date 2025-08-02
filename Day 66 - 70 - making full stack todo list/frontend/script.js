@@ -3,8 +3,6 @@ const API = "http://localhost:3000/api/tasks";
 
 const list = document.getElementById("task-list");
 
-
-
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const title = document.getElementById("title").value;
@@ -44,14 +42,19 @@ async function loadTask() {
     } else {
       li.className = "";
     }
+
     li.innerHTML = `<div class="left_div">
-                      <input type="checkbox" name="" id="" class="checkbox" ${
-                        task.isCompleted ? "checked" : ""
-                      } />
+                      <input type="checkbox" name="checkbox" id=${
+                        task._id
+                      } class="checkbox" ${task.isCompleted ? "checked" : ""} 
+                       onclick="toggleUpdate( '${
+                         task._id
+                       }' , ${!task.isCompleted} )"
+                      />
                       <details>
                         <summary class="taskTitle">${task.title}</summary>
                         <br />
-                        <p class="tasDesc">${task.description}</p>
+                        <p class="taskDesc">${task.description}</p>
                       </details>
                     </div>
 
@@ -59,6 +62,26 @@ async function loadTask() {
     list.appendChild(li);
   });
 }
-//getting tasks
 
+//getting tasks for GET request
 loadTask();
+
+//PUT DELETE request
+async function toggleUpdate(id, isCompleted) {
+  const res = await fetch(`${API}/${id}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ isCompleted }),
+  });
+  console.log(res.json());
+  loadTask();
+}
+
+// delete_btn.addEventListener("click", async () => {
+//   const res = await fetch(`${API}/1000`, {
+//     method: "DELETE",
+//   });
+//   const result = await res.json();
+//   console.log(result.message);
+//   loadTask();
+// });

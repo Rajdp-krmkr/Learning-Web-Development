@@ -1,0 +1,108 @@
+body {
+  font-family: sans-serif;
+}
+.form_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.auth_form {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(240, 240, 240);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.auth_form input {
+  /* width: 100%; */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.auth_form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+.auth_submit_btn {
+  width: 100%;
+  padding: 10px;
+  background: #000;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.auth_submit_btn:hover {
+  background: #333;
+}
+
+.dashboard_heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dashboard_heading input {
+  padding: 10px;
+}
+
+.table_div {
+  display: flex;
+  justify-content: center;
+}
+.table_div table {
+  flex: 1;
+}
+.table_div td {
+  text-align: center;
+}
+.table_div thead {
+  background-color: #6fdfed;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+.tbody {
+  background-color: #f0f0f0;
+  font-size: 16px;
+  color: #333;
+}
+.action_btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.action_btns button {
+  height: 28px;
+  width: 52px;
+}
+.action_btns button {
+  height: 28px;
+  width: 60px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.edit_btn {
+  background: #4ef51f;
+}
+.dlt_btn {
+  background-color: red;
+  text-align: center;
+}
