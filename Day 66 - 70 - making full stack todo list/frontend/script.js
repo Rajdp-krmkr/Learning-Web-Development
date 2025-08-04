@@ -25,8 +25,8 @@ form.addEventListener("submit", async (e) => {
 });
 
 // remaining Put and delete request
-
 // when at the first time on the webpage at "/", fetch a GET request to get the tasks and print them in the console (or you can show them in the frontend)
+
 async function loadTask() {
   // code to fetch tasks via GET request
   // search how to fetch a get request in google
