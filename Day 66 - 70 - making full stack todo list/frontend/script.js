@@ -47,9 +47,9 @@ async function loadTask() {
                       <input type="checkbox" name="checkbox" id=${
                         task._id
                       } class="checkbox" ${task.isCompleted ? "checked" : ""} 
-                       onclick="toggleUpdate( '${
-                         task._id
-                       }' , ${!task.isCompleted} )"
+                        onclick="toggleUpdate( '${
+                          task._id
+                        }' , ${!task.isCompleted} )"
                       />
                       <details>
                         <summary class="taskTitle">${task.title}</summary>
@@ -58,7 +58,9 @@ async function loadTask() {
                       </details>
                     </div>
 
-                    <button class="delete_btn">Delete</button>`;
+                    <button class="delete_btn" onclick="deleteTask('${
+                      task._id
+                    }')">Delete</button>`;
     list.appendChild(li);
   });
 }
@@ -77,11 +79,11 @@ async function toggleUpdate(id, isCompleted) {
   loadTask();
 }
 
-// delete_btn.addEventListener("click", async () => {
-//   const res = await fetch(`${API}/1000`, {
-//     method: "DELETE",
-//   });
-//   const result = await res.json();
-//   console.log(result.message);
-//   loadTask();
-// });
+async function deleteTask(id) {
+  const value = confirm("Are your sure you want to delete the task? ");
+  if (value) {
+    const response = await fetch(`${API}/${id}`, { method: "DELETE" });
+    console.log(response.json());
+    loadTask();
+  }
+}
