@@ -1,6 +1,3 @@
-Got it — here’s your updated **Day 2 React.js Notes** with **handling events removed** and a **section explaining why we use `useState` instead of a normal variable**.
-
----
 
 ## 📘 **React.js – Day 02 Notes**
 
@@ -162,11 +159,3 @@ function StudentList() {
 | Why useState is needed | ✅ / ❌     |
 | Conditional rendering  | ✅ / ❌     |
 | Rendering lists        | ✅ / ❌     |
-
----
-
-If you’d like, I can also **add a small visual diagram** showing:
-**"Normal Variable vs State in React"** so students clearly see why `useState` matters.
-That visual makes this concept stick in their memory.
-
-Do you want me to add that diagram?
